@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  remote-deployment-utility:
+    build: .
+    container_name: remote-deployment-utility
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    volumes:
+      - ./deployments:/application/deployments
+    restart: unless-stopped

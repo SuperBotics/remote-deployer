@@ -1,16 +1,35 @@
 {
-  "name": "cloudflared-deploy-server",
-  "version": "1.0.0",
-  "description": "Simple deployment server using Cloudflare Tunnel and zip extraction",
+  "name": "remote-deployment-utility",
+  "version": "1.1.0",
+  "description": "Secure remote deployment utility with Cloudflare tunnel support, API key protection, and OpenAPI documentation.",
   "main": "deploy-server.js",
+  "type": "commonjs",
+  "files": [
+    "deploy-server.js",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
-    "start": "node deploy-server.js"
+    "start": "node deploy-server.js",
+    "test": "node --test tests/*.test.js",
+    "check": "npm run test",
+    "package-preview": "npm pack --dry-run"
   },
+  "keywords": [
+    "deployment",
+    "cloudflare",
+    "tunnel",
+    "remote",
+    "devops"
+  ],
+  "author": "",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2",
-    "multer": "^1.4.5-lts.1",
-    "unzipper": "^0.10.11",
-    "fs-extra": "^11.2.0",
-    "uuid": "^9.0.1"
+    "express": "^4.21.2",
+    "fs-extra": "^11.3.0",
+    "multer": "^1.4.5-lts.2",
+    "swagger-ui-express": "^5.0.1",
+    "unzipper": "^0.12.3"
   }
 }
