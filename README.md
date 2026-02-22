@@ -1,6 +1,6 @@
 # Remote Deployment Utility
 
-![Build Status](https://img.shields.io/github/actions/workflow/status/your-organization/remote-deployment-utility/continuous-integration.yml?branch=main)
+[![Build](https://github.com/SuperBotics/remote-deployer/actions/workflows/continuous-integration.yml/badge.svg)](https://github.com/SuperBotics/remote-deployer/actions/workflows/continuous-integration.yml)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![OpenAPI](https://img.shields.io/badge/OpenAPI-3.0.3-green)
 
